@@ -1,36 +1,50 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudentHub - Home</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
 <header>
     <h1>StudentHub Portal</h1>
-    <nav>
+
+    <button id="menuButton" aria-expanded="false"
+        aria-controls="navigation">
+        ☰ Menu
+    </button>
+
+    <nav id="navigation">
         <a href="index.html">Home</a> |
         <a href="about.html">About</a> |
         <a href="register.html">Register</a> |
-        <a href="login.html">Login</a> | 
-        <a href="profile.html">Profile</a> | 
-        <a href="dashboard.html">Dashboard</a> | 
-        <a href="contact.html">Contact</a> | 
-        <a href="courses.html">Courses</a> | 
-        <a href="event.html">Event</a> | 
-        <a href="faq.html">FAQ</a> | 
-        
-        </nav>
+        <a href="login.html">Login</a> |
+        <a href="profile.html">Profile</a> |
+        <a href="dashboard.html">Dashboard</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="courses.html">Courses</a> |
+        <a href="event.html">Event</a> |
+        <a href="faq.html">FAQ</a>
+    </nav>
+
+    <button id="themeButton" type="button">
+        Switch Theme
+    </button>
 </header>
 
 <main>
     <section>
         <h2>Welcome to StudentHub</h2>
+
         <p>
             StudentHub helps students manage their academics,
             courses, profiles and college events in one place.
         </p>
+
         <p>Learn, connect and grow with StudentHub!</p>
     </section>
 
@@ -45,6 +59,99 @@
             <p>Stay updated about upcoming college activities.</p>
         </article>
     </section>
+
+    <!-- Notification Banner -->
+    <section id="notification" role="status" hidden>
+        <p>Welcome to StudentHub! Explore our latest updates.</p>
+        <button id="closeNotification" type="button"
+            aria-label="Close notification">Close</button>
+    </section>
+
+    <!-- Content Slider -->
+    <section>
+        <h2>StudentHub Highlights</h2>
+
+        <div id="slider">
+            <article class="slide">
+                <h3>Academic Learning</h3>
+                <p>Explore your courses and learning resources.</p>
+            </article>
+
+            <article class="slide" hidden>
+                <h3>College Activities</h3>
+                <p>Participate in college events and activities.</p>
+            </article>
+
+            <article class="slide" hidden>
+                <h3>Student Community</h3>
+                <p>Connect, learn and grow with other students.</p>
+            </article>
+        </div>
+
+        <button id="previousSlide" type="button">Previous</button>
+        <button id="nextSlide" type="button">Next</button>
+    </section>
+
+    <!-- Collapsible FAQ -->
+    <section>
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <h3>
+                <button class="faq-question" type="button"
+                    aria-expanded="false">
+                    What is StudentHub?
+                </button>
+            </h3>
+            <p class="faq-answer" hidden>
+                StudentHub helps students manage academics,
+                courses, profiles and college events.
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <h3>
+                <button class="faq-question" type="button"
+                    aria-expanded="false">
+                    How can I explore courses?
+                </button>
+            </h3>
+            <p class="faq-answer" hidden>
+                Visit the Courses page to explore academic subjects
+                and learning resources.
+            </p>
+        </div>
+
+        <div class="faq-item">
+            <h3>
+                <button class="faq-question" type="button"
+                    aria-expanded="false">
+                    Where can I find college events?
+                </button>
+            </h3>
+            <p class="faq-answer" hidden>
+                Visit the Event page to find college activities.
+            </p>
+        </div>
+    </section>
+
+    <!-- Modal Popup -->
+    <section>
+        <h2>More Information</h2>
+
+        <button id="openModal" type="button">
+            Learn More
+        </button>
+
+        <dialog id="infoModal" aria-labelledby="modalTitle">
+            <h2 id="modalTitle">About StudentHub</h2>
+            <p>
+                StudentHub brings student resources, courses
+                and college activities together in one portal.
+            </p>
+            <button id="closeModal" type="button">Close</button>
+        </dialog>
+    </section>
 </main>
 
 <footer>
@@ -53,3 +160,4 @@
 
 </body>
 </html>
+```
