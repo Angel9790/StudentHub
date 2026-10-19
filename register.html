@@ -1,32 +1,54 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Register</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Student Registration</h1>
+    <h1>StudentHub Registration</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="register.html">Register</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="event.html">Events</a>
+    </nav>
 </header>
 
 <main>
-    <form>
-        <label>Name:</label><br>
-        <input type="text"><br><br>  
+    <section>
+        <h2>Create Your Account</h2>
 
-        <label>Email:</label><br>
-        <input type="email"><br><br>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
 
-        <label>Password:</label><br>
-        <input type="password"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-        <button>Register</button>
-    </form>
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Select Course</option>
+                <option value="CE">Computer Engineering</option>
+                <option value="IT">Information Technology</option>
+            </select>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password"
+                   name="password" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
 </main>
 
 <footer>
-    <p>&copy; StudentHub</p>
+    <p>&copy; 2026 StudentHub</p>
 </footer>
 
 </body>

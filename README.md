@@ -32,7 +32,7 @@ with academic and campus-related information.
 - Contact
 - FAQ
 
-## Technologies Used
+## Technology Used
 
 - HTML
 
@@ -46,7 +46,6 @@ with academic and campus-related information.
 ## Project Structure
 
 StudentHub/
-│
 ├── index.html
 ├── about.html
 ├── register.html
@@ -62,16 +61,7 @@ StudentHub/
 
 ## Navigation
 
-The pages are connected using HTML anchor tags
-and hyperlinks.
-
-Example:
-
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="courses.html">Courses</a>
-<a href="events.html">Events</a>
-<a href="contact.html">Contact</a>
+The pages are connected using HTML anchor tags and hyperlinks.
 
 ## Future Scope
 
