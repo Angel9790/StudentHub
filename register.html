@@ -4,46 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudentHub - Register</title>
+    <title>StudentHub - Registration</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
 <header>
-    <h1>StudentHub Registration</h1>
-    <nav>
+    <h1>StudentHub Portal</h1>
+
+    <nav id="navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="register.html">Register</a>
+        <a href="students.html">Students</a>
         <a href="dashboard.html">Dashboard</a>
+        <a href="courses.html">Courses</a>
         <a href="event.html">Events</a>
     </nav>
 </header>
 
 <main>
     <section>
-        <h2>Create Your Account</h2>
+        <h2>Student Registration</h2>
 
-        <form action="#" method="post">
+        <form id="studentForm">
+
+            <label for="roll">Roll Number:</label>
+            <input type="text" id="roll" required
+                   placeholder="Example: 25CE006">
+
             <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" required
+                   placeholder="Enter your full name">
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" required
+                   placeholder="Enter your email">
 
             <label for="course">Course:</label>
-            <select id="course" name="course" required>
+            <select id="course" required>
                 <option value="">Select Course</option>
-                <option value="CE">Computer Engineering</option>
-                <option value="IT">Information Technology</option>
+                <option value="Computer Engineering">Computer Engineering</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="AI and ML">AI and ML</option>
             </select>
 
             <label for="password">Password:</label>
             <input type="password" id="password"
-                   name="password" required>
+                   minlength="6" required
+                   placeholder="At least 6 characters">
 
-            <button type="submit">Register</button>
+            <p id="formMessage" role="status" aria-live="polite"></p>
+
+            <button type="submit">Register Student</button>
+            <button type="reset">Clear Form</button>
+
         </form>
+
+        <p>
+            <a href="students.html">View Registered Students</a>
+        </p>
     </section>
 </main>
 

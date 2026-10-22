@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Student Records</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>StudentHub Portal</h1>
+
+    <nav id="navigation">
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="students.html">Students</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Registered Students</h2>
+
+        <label for="searchStudent">
+            Search by name or roll number:
+        </label>
+
+        <input type="text" id="searchStudent"
+               placeholder="Enter name or roll number">
+
+        <p id="recordMessage" role="status" aria-live="polite"></p>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Roll Number</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Course</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentTableBody"></tbody>
+            </table>
+        </div>
+
+        <p>
+            <a href="register.html">Register a New Student</a>
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 StudentHub</p>
+</footer>
+
+</body>
+</html>
