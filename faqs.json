@@ -1,0 +1,18 @@
+
+[
+  {"question":"What is StudentHub?","answer":"StudentHub is a portal for student information and resources.","category":"General"},
+  {"question":"How do I register?","answer":"Open the Register page and complete the required fields.","category":"Account"},
+  {"question":"How do I log in?","answer":"Enter your registered email and password on the Login page.","category":"Account"},
+  {"question":"Where can I see courses?","answer":"Open the Courses page to explore available subjects.","category":"Courses"},
+  {"question":"Where can I find events?","answer":"Visit the Events page to see listed college activities.","category":"Events"},
+  {"question":"How do I update my profile?","answer":"Open your Profile page to view your student details.","category":"Account"},
+  {"question":"Can I search student records?","answer":"Use the search field on the student records page.","category":"Students"},
+  {"question":"What is a JSON file?","answer":"JSON is a text format used to store structured data.","category":"Technical"},
+  {"question":"What does Fetch API do?","answer":"Fetch API requests resources such as JSON files from a server.","category":"Technical"},
+  {"question":"What is JavaScript filtering?","answer":"Filtering selects records that match a given condition.","category":"Technical"},
+  {"question":"What is pagination?","answer":"Pagination divides a long list into smaller pages.","category":"Technical"},
+  {"question":"How can I contact StudentHub?","answer":"Open the Contact page for the available contact form.","category":"General"},
+  {"question":"Why is my search empty?","answer":"Check your spelling or clear the search field.","category":"Technical"},
+  {"question":"Can I use StudentHub on mobile?","answer":"The responsive layout is designed to adapt to smaller screens.","category":"General"},
+  {"question":"Where can I report a problem?","answer":"Use the Contact or Feedback page to report an issue.","category":"General"}
+]

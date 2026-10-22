@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Practical 6 Data</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="practical6.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>StudentHub Portal</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="students.html">Student Records</a>
+        <a href="data.html">JSON Data</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Dynamic JSON Data</h2>
+        <p>Load and explore StudentHub data using the Fetch API.</p>
+
+        <label for="dataType">Select Data:</label>
+        <select id="dataType">
+            <option value="students">Students</option>
+            <option value="events">Events</option>
+            <option value="faqs">FAQs</option>
+        </select>
+
+        <label for="searchBox">Search:</label>
+        <input type="search" id="searchBox"
+               placeholder="Search records...">
+
+        <label for="categoryFilter">Filter by category/course:</label>
+        <select id="categoryFilter">
+            <option value="">All categories/courses</option>
+        </select>
+
+        <label for="sortOrder">Sort by title/name:</label>
+        <select id="sortOrder">
+            <option value="asc">A to Z</option>
+            <option value="desc">Z to A</option>
+        </select>
+
+        <p id="loadingMessage" role="status" aria-live="polite"></p>
+        <p id="resultCount" aria-live="polite"></p>
+
+        <div id="dataContainer" class="grid-layout"></div>
+
+        <p id="pageInfo"></p>
+
+        <button id="previousPage" type="button">Previous</button>
+        <button id="nextPage" type="button">Next</button>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 StudentHub</p>
+</footer>
+
+</body>
+</html>

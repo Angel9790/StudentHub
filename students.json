@@ -1,0 +1,18 @@
+
+[
+  {"roll":"25CE001","name":"Aarav Patel","course":"Computer Engineering","year":"First Year"},
+  {"roll":"25CE002","name":"Diya Shah","course":"Information Technology","year":"First Year"},
+  {"roll":"25CE003","name":"Riya Mehta","course":"Computer Engineering","year":"Second Year"},
+  {"roll":"25CE004","name":"Arjun Desai","course":"Computer Science","year":"Second Year"},
+  {"roll":"25CE005","name":"Neha Joshi","course":"Computer Engineering","year":"Third Year"},
+  {"roll":"25CE006","name":"Angel Bavarva","course":"Computer Engineering","year":"Second Year"},
+  {"roll":"25CE007","name":"Krutagni Patel","course":"Information Technology","year":"Third Year"},
+  {"roll":"25CE008","name":"Mira Trivedi","course":"Computer Science","year":"First Year"},
+  {"roll":"25CE009","name":"Dev Shah","course":"Computer Engineering","year":"Fourth Year"},
+  {"roll":"25CE010","name":"Isha Parmar","course":"Information Technology","year":"Second Year"},
+  {"roll":"25CE011","name":"Karan Desai","course":"Computer Science","year":"Third Year"},
+  {"roll":"25CE012","name":"Pooja Patel","course":"Computer Engineering","year":"First Year"},
+  {"roll":"25CE013","name":"Nirav Mehta","course":"Information Technology","year":"Fourth Year"},
+  {"roll":"25CE014","name":"Sana Khan","course":"Computer Science","year":"Second Year"},
+  {"roll":"25CE015","name":"Jay Joshi","course":"Computer Engineering","year":"Third Year"}
+]

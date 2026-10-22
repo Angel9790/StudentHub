@@ -1,0 +1,18 @@
+
+[
+  {"title":"Coding Hackathon","date":"2026-11-05","category":"Technical","description":"Participate in a team coding challenge."},
+  {"title":"Web Development Workshop","date":"2026-11-08","category":"Workshop","description":"Learn HTML, CSS and JavaScript."},
+  {"title":"Sports Day","date":"2026-11-12","category":"Sports","description":"Participate in outdoor sports."},
+  {"title":"AI Seminar","date":"2026-11-15","category":"Technical","description":"Explore artificial intelligence applications."},
+  {"title":"Robotics Workshop","date":"2026-11-18","category":"Workshop","description":"Learn robotics fundamentals."},
+  {"title":"Cultural Fest","date":"2026-11-20","category":"Cultural","description":"Enjoy performances and student activities."},
+  {"title":"Cybersecurity Talk","date":"2026-11-22","category":"Technical","description":"Learn basic cybersecurity practices."},
+  {"title":"Photography Contest","date":"2026-11-25","category":"Cultural","description":"Showcase your photography skills."},
+  {"title":"Cricket Tournament","date":"2026-11-27","category":"Sports","description":"Join the interdepartmental tournament."},
+  {"title":"Python Workshop","date":"2026-12-01","category":"Workshop","description":"Practice Python programming."},
+  {"title":"Project Exhibition","date":"2026-12-04","category":"Technical","description":"Present student projects."},
+  {"title":"Music Competition","date":"2026-12-07","category":"Cultural","description":"Participate in the college music event."},
+  {"title":"Football Match","date":"2026-12-10","category":"Sports","description":"Watch or participate in football."},
+  {"title":"Cloud Computing Seminar","date":"2026-12-13","category":"Technical","description":"Understand cloud computing concepts."},
+  {"title":"Career Guidance Session","date":"2026-12-16","category":"Seminar","description":"Explore career and placement opportunities."}
+]
