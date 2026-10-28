@@ -1,0 +1,389 @@
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #4255d4;
+    --primary-dark: #293b9d;
+    --background: #f4f6fc;
+    --text: #202641;
+    --muted: #777f98;
+    --border: #e5e8f2;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 32px 20px;
+    background: var(--background);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+}
+
+.eyebrow {
+    margin: 0 0 9px;
+    color: var(--primary);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+}
+
+h1 {
+    margin: 0;
+    color: #202d65;
+    font-size: clamp(26px, 4vw, 36px);
+}
+
+.subtitle {
+    margin: 10px 0 0;
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+.api-label {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 11px 15px;
+    border: 1px solid #dce4ff;
+    border-radius: 30px;
+    background: #edf1ff;
+    color: #3347a7;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.status-dot {
+    width: 9px;
+    height: 9px;
+    background: #29a765;
+    border-radius: 50%;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.stat-card {
+    padding: 22px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(35, 49, 100, 0.04);
+}
+
+.stat-card p {
+    margin: 0 0 13px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.stat-card h2 {
+    margin: 0;
+    color: #27387f;
+    font-size: 30px;
+}
+
+.stat-card .stat-small {
+    font-size: 21px;
+}
+
+.card {
+    margin-bottom: 24px;
+    padding: 26px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    box-shadow: 0 5px 24px rgba(35, 49, 100, 0.045);
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 23px;
+}
+
+.section-heading h2 {
+    margin: 0;
+    color: #283675;
+    font-size: 21px;
+}
+
+.section-description {
+    margin: 8px 0 0;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.step-label {
+    padding: 7px 12px;
+    background: #eef0ff;
+    color: #4354b8;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.form-group label,
+.search-box label {
+    display: block;
+    margin-bottom: 9px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #363d5c;
+}
+
+input {
+    width: 100%;
+    min-width: 0;
+    padding: 12px 13px;
+    border: 1px solid #dce0ec;
+    border-radius: 8px;
+    background: #fff;
+    color: var(--text);
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(66, 85, 212, 0.12);
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+button {
+    padding: 11px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.primary-btn {
+    background: var(--primary);
+    color: white;
+}
+
+.primary-btn:hover {
+    background: var(--primary-dark);
+}
+
+.secondary-btn {
+    background: #edf0f8;
+    color: #39415f;
+}
+
+.secondary-btn:hover {
+    background: #e1e5f3;
+}
+
+.edit-btn {
+    margin-right: 5px;
+    margin-bottom: 4px;
+    background: #fff1c9;
+    color: #795900;
+}
+
+.delete-btn {
+    margin-bottom: 4px;
+    background: #ffe7e7;
+    color: #b12727;
+}
+
+.message {
+    display: none;
+    margin-bottom: 20px;
+    padding: 14px 16px;
+    border-radius: 9px;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.message.show {
+    display: block;
+}
+
+.message.success {
+    background: #e7f8ed;
+    color: #176b39;
+    border: 1px solid #c5ebd1;
+}
+
+.message.error {
+    background: #ffeded;
+    color: #a42323;
+    border: 1px solid #f5caca;
+}
+
+.message.info {
+    background: #eaf0ff;
+    color: #2948a2;
+    border: 1px solid #d2ddff;
+}
+
+.search-box {
+    max-width: 450px;
+    margin-bottom: 20px;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+}
+
+table {
+    width: 100%;
+    min-width: 720px;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #293879;
+    color: white;
+}
+
+th {
+    padding: 15px 13px;
+    font-size: 12px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+td {
+    padding: 14px 13px;
+    border-bottom: 1px solid #edf0f6;
+    color: #434a65;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background: #f7f8ff;
+}
+
+.student-name {
+    color: #293879;
+    font-weight: bold;
+}
+
+.id-badge {
+    display: inline-block;
+    padding: 5px 8px;
+    border-radius: 6px;
+    background: #eef0ff;
+    color: #3548a8;
+    font-weight: bold;
+}
+
+.empty-state {
+    padding: 30px;
+    text-align: center;
+    color: var(--muted);
+}
+
+.table-note {
+    margin: 14px 0 0;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.footer {
+    padding: 15px 0;
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+@media (max-width: 850px) {
+    .form-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stats-grid {
+        gap: 12px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 560px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    .form-grid,
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .stat-card {
+        padding: 17px;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+    }
+
+    .header h1 {
+        font-size: 27px;
+    }
+}

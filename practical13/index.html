@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+
+    <header class="header">
+        <div>
+            <p class="eyebrow">STUDENTHUB • PRACTICAL 13</p>
+            <h1>Student Management</h1>
+            <p class="subtitle">Manage student records in one place.</p>
+        </div>
+        <div class="api-label">
+            <span class="status-dot"></span>
+            PHP JSON API
+        </div>
+    </header>
+
+    <section class="stats-grid">
+        <div class="stat-card">
+            <p>Total Students</p>
+            <h2 id="totalStudents">0</h2>
+        </div>
+        <div class="stat-card">
+            <p>Database</p>
+            <h2 class="stat-small">MySQL</h2>
+        </div>
+        <div class="stat-card">
+            <p>Communication</p>
+            <h2 class="stat-small">Fetch API</h2>
+        </div>
+    </section>
+
+    <div id="message" class="message" role="status" aria-live="polite"></div>
+
+    <section class="card">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">STUDENT DETAILS</p>
+                <h2 id="formHeading">Add New Student</h2>
+            </div>
+            <span class="step-label">FORM</span>
+        </div>
+
+        <form id="studentForm">
+            <input type="hidden" id="id">
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter student name"
+                        maxlength="100"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="student@example.com"
+                        maxlength="150"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Course / Department</label>
+                    <input
+                        type="text"
+                        id="course"
+                        placeholder="Computer Engineering"
+                        maxlength="100"
+                        required
+                    >
+                </div>
+            </div>
+
+            <div class="actions">
+                <button type="submit" class="primary-btn" id="saveButton">
+                    + Save Student
+                </button>
+                <button type="button" class="secondary-btn" id="cancelButton">
+                    Clear Form
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <section class="card">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">DATABASE RECORDS</p>
+                <h2>Student Directory</h2>
+                <p class="section-description">
+                    Add, view, edit, and delete student records.
+                </p>
+            </div>
+            <button type="button" class="secondary-btn" id="refreshButton">
+                ↻ Refresh
+            </button>
+        </div>
+
+        <div class="search-box">
+            <label for="search">Search students</label>
+            <input
+                type="search"
+                id="search"
+                placeholder="Search by name, email, or course..."
+            >
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Student</th>
+                        <th>Email</th>
+                        <th>Course</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="studentTable">
+                    <tr>
+                        <td colspan="5" class="empty-state">Loading students...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="table-note">Changes are saved to the MySQL database.</p>
+    </section>
+
+    <footer class="footer">
+        StudentHub • Web Development Frameworks • Practical 13
+    </footer>
+
+</div>
+
+</body>
+</html>
